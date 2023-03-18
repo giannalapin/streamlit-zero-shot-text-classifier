@@ -77,8 +77,9 @@ st.sidebar.write(
     """
     Model used:
     """
+    API_URL
 )
-API_URL
+
 
 ############ TABBED NAVIGATION ############
 
