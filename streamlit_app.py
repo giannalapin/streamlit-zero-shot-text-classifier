@@ -75,9 +75,8 @@ headers = {"Authorization": f"Bearer {API_KEY}"}
 
 st.sidebar.write(
     """
-    Model used:
+
     """
-    API_URL
 )
 
 
@@ -86,6 +85,12 @@ st.sidebar.write(
 # First, we're going to create a tabbed navigation for the app via st.tabs()
 # tabInfo displays info about the app.
 # tabMain displays the main app.
+
+st.markdown(
+        """
+        Model used:
+        """)
+API_URL
 
 MainTab, InfoTab = st.tabs(["Main", "Info"])
 
