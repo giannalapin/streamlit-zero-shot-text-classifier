@@ -58,8 +58,6 @@ st.sidebar.write("")
 
 # We create a text input field for users to enter their API key.
 
-API_KEY = {"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"}
-
 # API_KEY = st.sidebar.text_input(
 #    "Enter your HuggingFace API key",
 #    help="Once you created you HuggingFace account, you can get your free API token in your settings page: https://huggingface.co/settings/tokens",
@@ -70,7 +68,7 @@ API_KEY = {"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"}
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
 
 # Now, let's create a Python dictionary to store the API headers.
-headers = {"Authorization": f"Bearer {API_KEY}"}
+headers = {"Authorization": f"Bearer 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"}
 
 
 # Let's add some info about the app to the sidebar.
