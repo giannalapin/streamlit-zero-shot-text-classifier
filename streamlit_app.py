@@ -10,6 +10,12 @@ import pandas as pd
 import numpy as np
 from streamlit_tags import st_tags  # to add labels on the fly!
 
+# Adding the HuggingFace API inference URL.
+API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
+
+# Now, let's create a Python dictionary to store the API headers.
+headers = {"Authorization": f"Bearer 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"}
+
 
 ############ 2. SETTING UP THE PAGE LAYOUT AND TITLE ############
 
@@ -48,36 +54,6 @@ with c2:
 
 if not "valid_inputs_received" in st.session_state:
     st.session_state["valid_inputs_received"] = False
-
-
-############ SIDEBAR CONTENT ############
-
-st.sidebar.write("")
-
-# For elements to be displayed in the sidebar, we need to add the sidebar element in the widget.
-
-# We create a text input field for users to enter their API key.
-
-# API_KEY = st.sidebar.text_input(
-#    "Enter your HuggingFace API key",
-#    help="Once you created you HuggingFace account, you can get your free API token in your settings page: https://huggingface.co/settings/tokens",
-#    type="password",
-#)
-
-# Adding the HuggingFace API inference URL.
-API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
-
-# Now, let's create a Python dictionary to store the API headers.
-headers = {"Authorization": f"Bearer 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"}
-
-
-# Let's add some info about the app to the sidebar.
-
-st.sidebar.write(
-    """
-
-    """
-)
 
 
 ############ TABBED NAVIGATION ############
