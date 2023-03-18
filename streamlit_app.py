@@ -65,13 +65,10 @@ API_KEY = st.sidebar.text_input(
 )
 
 # Adding the HuggingFace API inference URL.
-API_URL = "https://api-inference.huggingface.co/models/valhalla/distilbart-mnli-12-3"
+API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
 
 # Now, let's create a Python dictionary to store the API headers.
 headers = {"Authorization": f"Bearer {API_KEY}"}
-
-
-st.sidebar.markdown("---")
 
 
 # Let's add some info about the app to the sidebar.
