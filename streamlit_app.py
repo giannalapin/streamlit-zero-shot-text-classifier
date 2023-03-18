@@ -16,7 +16,7 @@ from streamlit_tags import st_tags  # to add labels on the fly!
 # `st.set_page_config` is used to display the default layout width, the title of the app, and the emoticon in the browser tab.
 
 st.set_page_config(
-    layout="centered", page_title="Zero-Shot Text Classifier", page_icon="❄️"
+    layout="centered", page_title="Icomprendizer", page_icon="💭"
 )
 
 ############ CREATE THE LOGO AND HEADING ############
@@ -31,7 +31,7 @@ c1, c2 = st.columns([0.32, 2])
 with c1:
 
     st.image(
-        "images/logo.png",
+        "https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f4ad.png",
         width=85,
     )
 
@@ -41,7 +41,7 @@ with c1:
 with c2:
 
     st.caption("")
-    st.title("Zero-Shot Text Classifier")
+    st.title("Icomprendizer")
 
 
 # We need to set up session state via st.session_state so that app interactions don't reset the app.
