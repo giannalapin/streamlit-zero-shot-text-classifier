@@ -75,10 +75,10 @@ headers = {"Authorization": f"Bearer {API_KEY}"}
 
 st.sidebar.write(
     """
-    Content removed.
+    Model used:
     """
 )
-
+API_URL
 
 ############ TABBED NAVIGATION ############
 
