@@ -58,11 +58,13 @@ st.sidebar.write("")
 
 # We create a text input field for users to enter their API key.
 
-API_KEY = st.sidebar.text_input(
-    "Enter your HuggingFace API key",
-    help="Once you created you HuggingFace account, you can get your free API token in your settings page: https://huggingface.co/settings/tokens",
-    type="password",
-)
+API_KEY = {"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"}
+
+# API_KEY = st.sidebar.text_input(
+#    "Enter your HuggingFace API key",
+#    help="Once you created you HuggingFace account, you can get your free API token in your settings page: https://huggingface.co/settings/tokens",
+#    type="password",
+#)
 
 # Adding the HuggingFace API inference URL.
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-mnli"
