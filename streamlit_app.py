@@ -1,3 +1,5 @@
+# Based on an app created by [Charly Wargnier](https://twitter.com/DataChaz) using [Streamlit](https://streamlit.io/)🎈 and [HuggingFace](https://huggingface.co/inference-api)'s [Distilbart-mnli-12-3](https://huggingface.co/valhalla/distilbart-mnli-12-3) model.
+
 ############ 1. IMPORTING LIBRARIES ############
 
 # Import streamlit, requests for API calls, and pandas and numpy for data manipulation
@@ -76,10 +78,8 @@ st.sidebar.markdown("---")
 
 st.sidebar.write(
     """
-
-App created by [Charly Wargnier](https://twitter.com/DataChaz) using [Streamlit](https://streamlit.io/)🎈 and [HuggingFace](https://huggingface.co/inference-api)'s [Distilbart-mnli-12-3](https://huggingface.co/valhalla/distilbart-mnli-12-3) model. Modified by GPL
-
-"""
+    Content removed.
+    """
 )
 
 
